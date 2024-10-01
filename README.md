@@ -1,6 +1,16 @@
 Depth Extraction
 =============
 
+#### - Run video
+  
+  - vitl: vit-large, vitb: vit-base, vits: vit-small
+  
+```
+python run_video.py \
+--encoder {vitl|vitb|vits} \
+--video-path {video_path}
+```
+
 References
 =============
 

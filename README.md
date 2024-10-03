@@ -105,7 +105,7 @@ References
 
 #### - [Original Code](https://github.com/DepthAnything/Depth-Anything-V2)
 
-#### - [TensorRT](https://github.com/zhujiajian98/Ddocker epth-Anythingv2-TensorRT-python)
+#### - [TensorRT](https://github.com/zhujiajian98/Ddocker)
 
 
 Author

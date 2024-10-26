@@ -5,25 +5,6 @@ Contents
 
 #### - Depth-Anything2 TensorRT test
 
-Depth-Anything2 ONNX & TensorRT Engine
-=============
-
-#### - [ONNX Download](https://huggingface.co/yuvraj108c/Depth-Anything-2-Onnx/tree/main)
-
-#### - [TensorRT Engine Sample Download](http://naver.me/GMmjTDNi)
-   
-   - Password: 1234
-
-#### - Convert ONNX to TensorRT Engine
-
-```
-cd Depth_Anythingv2_TensorRT_python
-python tools/onnx2trt.py \
---mode {fp16|fp32} \
--o {onnx_path} \
---output {trt_engine_path} \
-```
-
 
 Structures of Project Folders
 =============
@@ -65,6 +46,26 @@ docker run -it --gpus all --name {container_name} \
 --shm-size=64G -p 8845:8845 -e GRANT_SUDO=yes --user root \
 -v {root_folder}:/workspace/Depth-Anything \
 -w /workspace/Depth-Anything depth_anything_trt_env:latest bash
+```
+
+
+Depth-Anything2 ONNX & TensorRT Engine
+=============
+
+#### - [ONNX Download](https://huggingface.co/yuvraj108c/Depth-Anything-2-Onnx/tree/main)
+
+#### - [TensorRT Engine Sample Download](http://naver.me/GMmjTDNi)
+   
+   - Password: 1234
+
+#### - Convert ONNX to TensorRT Engine
+
+```
+cd Depth_Anythingv2_TensorRT_python
+python tools/onnx2trt.py \
+--mode {fp16|fp32} \
+-o {onnx_path} \
+--output {trt_engine_path} \
 ```
 
 

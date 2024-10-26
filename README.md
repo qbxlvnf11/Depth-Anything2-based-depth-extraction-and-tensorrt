@@ -11,7 +11,7 @@ Structures of Project Folders
 
 #### - [Download TensorRT 8.6.1.6](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
-#### - [Depth_Anythingv2_TensorRT_python](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
+#### - [Depth_Anythingv2_TensorRT_python](https://github.com/zhujiajian98/Depth-Anythingv2-TensorRT-python)
 
 ```
 ${CODE_ROOT}

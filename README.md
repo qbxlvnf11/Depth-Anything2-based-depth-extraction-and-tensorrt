@@ -11,6 +11,8 @@ Structures of Project Folders
 
 #### - [Download TensorRT 8.6.1.6](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
+#### - [Depth_Anythingv2_TensorRT_python](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
+
 ```
 ${CODE_ROOT}
             |   |-- run_video.py
@@ -18,13 +20,13 @@ ${CODE_ROOT}
             |   |-- images_depth_image_extraction.py
             |   |-- videos_depth_image_extraction.py
             |   |-- Depth_Anythingv2_TensorRT_python
-            |   |   |   |-- TensorRT-8.6.1.6
-            |   |   |   |   |   |-- onnx_graphsurgeon
-            |   |   |   |   |   |-- ...
-            |   |-- TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0
             |   |   |   |-- checkpoints
             |   |   |   |   |   |-- depth_anything_v2_vitl.onnx
             |   |   |   |   |   |-- depth_anything_v2_vitl_fp16.engine
+            |   |   |   |   |   |-- ...
+            |   |-- TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0
+            |   |   |   |-- TensorRT-8.6.1.6
+            |   |   |   |   |   |-- onnx_graphsurgeon
             |   |   |   |   |   |-- ...
             |   |-- ...
 ```

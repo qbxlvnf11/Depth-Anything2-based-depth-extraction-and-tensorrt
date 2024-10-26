@@ -24,10 +24,14 @@ ${CODE_ROOT}
             |   |   |   |   |   |-- depth_anything_v2_vitl.onnx
             |   |   |   |   |   |-- depth_anything_v2_vitl_fp16.engine
             |   |   |   |   |   |-- ...
+            |   |   |   |-- tools
+            |   |   |   |   |   |-- onnx2trt.py
+            |   |   |   |-- ...
             |   |-- TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0
             |   |   |   |-- TensorRT-8.6.1.6
             |   |   |   |   |   |-- onnx_graphsurgeon
             |   |   |   |   |   |-- ...
+            |   |   |   |-- ...
             |   |-- ...
 ```
 
@@ -59,6 +63,27 @@ Depth-Anything2 ONNX & TensorRT Engine
 #### - [TensorRT Engine Sample Download](http://naver.me/GMmjTDNi)
    
    - Password: 1234
+
+#### - TensorRT Setup 
+
+   - This setup is already installed in depth_anything_trt_env. If you need to install tensorrt in a new environment, run it.
+   - Need to match the Python version
+
+```
+export LD_LIBRARY_PATH=/path/to/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/TensorRT-8.6.1.6/lib:$LD_LIBRARY_PATH
+export PATH=$PATH:/path/to/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/TensorRT-8.6.1.6/bin
+source ~/.bashrc
+source /etc/profile
+
+cd TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/TensorRT-8.6.1.6/python
+pip install tensorrt-8.6.1-cp310-none-linux_x86_64.whl
+
+cd TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/TensorRT-8.6.1.6/graphsurgeon
+pip install graphsurgeon-0.4.6-py2.py3-none-any.whl
+
+cd TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/TensorRT-8.6.1.6/onnx_graphsurgeon
+pip install onnx_graphsurgeon-0.3.12-py2.py3-none-any.whl
+```
 
 #### - Convert ONNX to TensorRT Engine
 

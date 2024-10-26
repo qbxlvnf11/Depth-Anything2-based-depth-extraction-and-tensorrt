@@ -8,7 +8,7 @@ Contents
 Depth-Anything2 ONNX & TensorRT Engine
 =============
 
-#### - [ONNX Download](https://huggingface.co/yuvraj108c/Depth-Anything-2-Onnx/tree/main0)
+#### - [ONNX Download](https://huggingface.co/yuvraj108c/Depth-Anything-2-Onnx/tree/main)
 
 #### - [TensorRT Engine Sample Download](http://naver.me/GMmjTDNi)
    

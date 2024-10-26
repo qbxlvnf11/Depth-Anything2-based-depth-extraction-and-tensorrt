@@ -5,6 +5,26 @@ Contents
 
 #### - Depth-Anything2 TensorRT test
 
+Depth-Anything2 ONNX & TensorRT Engine
+=============
+
+#### - [ONNX Download](https://huggingface.co/yuvraj108c/Depth-Anything-2-Onnx/tree/main0)
+
+#### - [TensorRT Engine Sample Download](http://naver.me/GMmjTDNi)
+   
+   - Password: 1234
+
+#### - Convert ONNX to TensorRT Engine
+
+```
+cd Depth_Anythingv2_TensorRT_python
+python tools/onnx2trt.py \
+--mode {fp16|fp32} \
+-o {onnx_path} \
+--output {trt_engine_path} \
+```
+
+
 Structures of Project Folders
 =============
 
@@ -84,16 +104,16 @@ Inference
 ```
 python run_video.py \
 --encoder {vitl|vitb|vits} \
---video-path {input_video_path}
+--video_path {input_video_path}
 --outdir {video_save_path}
 ```
 
 #### - Inference video (TensorRT)
   
 ```
-python run_video.py \
+python run_video_trt.py \
 --engine {trt_engine_path} \
---video-path {input_video_path}
+--video_path {input_video_path}
 --outdir {video_save_path}
 ```
 

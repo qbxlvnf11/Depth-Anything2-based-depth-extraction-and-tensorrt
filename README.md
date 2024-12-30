@@ -116,7 +116,7 @@ python videos_depth_image_extraction.py \
 #### - Depth extraction from images
 
 ```
-python videos_depth_image_extraction.py \
+python images_depth_image_extraction.py \
 --encoder {vitl|vitb|vits} \
 --image_path {input_folder_path} \
 --dep_folder_path {depth_save_path} \
